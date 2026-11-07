@@ -1,0 +1,125 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 317
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 40,
+            "y": 188.64453125
+          },
+          "nodeIndex": "DimFecha",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 984,
+            "y": 184.26953125
+          },
+          "nodeIndex": "DimMarca",
+          "nodeLineageTag": "1a098f2e-c8e0-46d4-b86d-e810262d05d9",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 320,
+            "y": 696.83203125
+          },
+          "nodeIndex": "DimImportador",
+          "nodeLineageTag": "4047e23c-8863-4c61-ad4b-0eef6339241b",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 785,
+            "y": 762.01953125
+          },
+          "nodeIndex": "DimPais",
+          "nodeLineageTag": "74c7a5a0-961f-4999-99d5-ceb9f54ae46f",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 442,
+            "y": 267.14453125
+          },
+          "nodeIndex": "Importaciones_RAM",
+          "nodeLineageTag": "58342147-4d19-4885-a4a5-b2d532a8879f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 978,
+            "y": 527.53515625
+          },
+          "nodeIndex": "DimTransporte",
+          "nodeLineageTag": "f33126f8-f9f5-4442-a6f3-d88e35605bd4",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 649,
+            "y": 0
+          },
+          "nodeIndex": "DimProducto",
+          "nodeLineageTag": "72b7a2bb-8c90-4b38-91bb-a33ce0b48d0e",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 573.009765625
+          },
+          "nodeIndex": "DimAduana",
+          "nodeLineageTag": "b1ec8fff-039f-4fcf-b135-5bc43cc22035",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

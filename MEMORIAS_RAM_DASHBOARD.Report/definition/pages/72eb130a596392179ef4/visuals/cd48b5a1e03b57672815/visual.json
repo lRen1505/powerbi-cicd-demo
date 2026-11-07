@@ -1,0 +1,122 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "cd48b5a1e03b57672815",
+  "position": {
+    "x": 29.179331306990882,
+    "y": 43.768996960486319,
+    "z": 0,
+    "height": 728.02431610942244,
+    "width": 745.531914893617,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pieChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Importaciones_RAM"
+                    }
+                  },
+                  "Property": "ADUANA"
+                }
+              },
+              "queryRef": "Importaciones_RAM.ADUANA",
+              "nativeQueryRef": "ADUANA",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimProducto"
+                        }
+                      },
+                      "Property": "PRODUCTO"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "CountNonNull(DimProducto.PRODUCTO)",
+              "nativeQueryRef": "Recuento de PRODUCTO"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "DimProducto"
+                      }
+                    },
+                    "Property": "PRODUCTO"
+                  }
+                },
+                "Function": 5
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8d0c209b1c2b272a8c4e",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "DimProducto"
+                  }
+                },
+                "Property": "PRODUCTO"
+              }
+            },
+            "Function": 5
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3c9f8e7387f9b7790c97",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Importaciones_RAM"
+              }
+            },
+            "Property": "ADUANA"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

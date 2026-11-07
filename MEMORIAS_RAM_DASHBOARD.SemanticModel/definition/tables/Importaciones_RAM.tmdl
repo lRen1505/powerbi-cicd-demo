@@ -1,0 +1,584 @@
+table Importaciones_RAM
+	lineageTag: 58342147-4d19-4885-a4a5-b2d532a8879f
+
+	column DUA
+		dataType: string
+		lineageTag: ecccf23d-f697-4b76-9254-56461963e2c9
+		summarizeBy: none
+		sourceColumn: DUA
+
+		annotation SummarizationSetBy = Automatic
+
+	column SERIE
+		dataType: string
+		lineageTag: ae48688c-daf3-4db7-9c9f-796bbbac1d91
+		summarizeBy: none
+		sourceColumn: SERIE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADUANA
+		dataType: string
+		lineageTag: d94e78bd-4d61-40e4-ad3d-906aafa6eb0f
+		summarizeBy: none
+		sourceColumn: ADUANA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TIPO DOCUMENTO'
+		dataType: string
+		lineageTag: 926b86b0-3eb5-4454-9fdf-1bcba7660b62
+		summarizeBy: none
+		sourceColumn: TIPO DOCUMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RUC IMPORTADOR'
+		dataType: string
+		lineageTag: 2bc83014-3d31-4577-b056-80de4b16977a
+		summarizeBy: none
+		sourceColumn: RUC IMPORTADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column IMPORTADOR
+		dataType: string
+		lineageTag: 47856aa9-6a73-4df6-9cff-dbaf67cb7919
+		summarizeBy: none
+		sourceColumn: IMPORTADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DEPARTAMENTO DE IMPORTADOR'
+		dataType: string
+		lineageTag: e633040d-d5a7-44c2-a92f-beed60fea4a0
+		summarizeBy: none
+		sourceColumn: DEPARTAMENTO DE IMPORTADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column PROVINCIA
+		dataType: string
+		lineageTag: a0b2470a-3329-488c-aa46-d898bdd1d0b3
+		summarizeBy: none
+		sourceColumn: PROVINCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISTRITO
+		dataType: string
+		lineageTag: b694f885-082c-4ac8-abf0-771335fa23a1
+		summarizeBy: none
+		sourceColumn: DISTRITO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'VÍA DE TRANSPORTE'
+		dataType: string
+		lineageTag: c738bba1-584c-4595-89a4-8f539236b035
+		summarizeBy: none
+		sourceColumn: VÍA DE TRANSPORTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column BANCO
+		dataType: string
+		lineageTag: fe97aac4-6b66-479b-8ab1-b8486cca998a
+		summarizeBy: none
+		sourceColumn: BANCO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PAÍS DE ORIGEN'
+		dataType: string
+		lineageTag: 95bac2a1-4402-4ad4-9dcd-091b1d5f13ec
+		summarizeBy: none
+		sourceColumn: PAÍS DE ORIGEN
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PAÍS DE ADQUISICIÓN'
+		dataType: string
+		lineageTag: c651a93f-fb61-4311-a6be-2b49013ec07c
+		summarizeBy: none
+		sourceColumn: PAÍS DE ADQUISICIÓN
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PUERTO DE EMBARQUE'
+		dataType: string
+		lineageTag: d00f4bfc-1ff9-44fa-8318-4ebd0e377fbb
+		summarizeBy: none
+		sourceColumn: PUERTO DE EMBARQUE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PARTIDA ARANCELARIA'
+		dataType: string
+		lineageTag: 9f078025-205e-4ff1-95b5-049bdb6f4b77
+		summarizeBy: none
+		sourceColumn: PARTIDA ARANCELARIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DESCRIPCIÓN ARANCELARIA'
+		dataType: string
+		lineageTag: 0b77b223-f1b5-4d4f-ab0a-1412cead58ec
+		summarizeBy: none
+		sourceColumn: DESCRIPCIÓN ARANCELARIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column MERCANCÍA
+		dataType: string
+		lineageTag: b5b07959-82fe-43b7-9a5c-5ff12adbadae
+		summarizeBy: none
+		sourceColumn: MERCANCÍA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DESCRIPCIÓN DE MERCANCÍA 1'
+		dataType: string
+		lineageTag: 48d4ddf7-4868-44f4-b97b-70a4b20e4a6b
+		summarizeBy: none
+		sourceColumn: DESCRIPCIÓN DE MERCANCÍA 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DESCRIPCIÓN DE MERCANCÍA 2'
+		dataType: string
+		lineageTag: 92fe2d44-9547-4d92-af5a-ee944c7ba274
+		summarizeBy: none
+		sourceColumn: DESCRIPCIÓN DE MERCANCÍA 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DESCRIPCIÓN DE MERCANCÍA 3'
+		dataType: string
+		lineageTag: 0fc84705-5547-4ae0-a485-975b2aee854b
+		summarizeBy: none
+		sourceColumn: DESCRIPCIÓN DE MERCANCÍA 3
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DESCRIPCIÓN DE MERCANCÍA 4'
+		dataType: string
+		lineageTag: f595065e-1d75-4a8c-8cb4-9570ee5c9218
+		summarizeBy: none
+		sourceColumn: DESCRIPCIÓN DE MERCANCÍA 4
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRODUCTO
+		dataType: string
+		lineageTag: 3ef38abb-ad62-4e3b-a354-a74ceafb3a72
+		summarizeBy: none
+		sourceColumn: PRODUCTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column MARCA
+		dataType: string
+		lineageTag: bed575f9-a649-4d2e-b06a-93db165c68c1
+		summarizeBy: none
+		sourceColumn: MARCA
+
+		annotation SummarizationSetBy = Automatic
+
+	column MODELO
+		dataType: string
+		lineageTag: 4be44b67-1726-4946-9bfd-f2988a6e7a15
+		summarizeBy: none
+		sourceColumn: MODELO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CARACTERÍSTICAS
+		dataType: string
+		lineageTag: 20a93263-bc9b-4f4a-b479-b3fef6912b37
+		summarizeBy: none
+		sourceColumn: CARACTERÍSTICAS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'US$ FOB'
+		dataType: double
+		lineageTag: e17cbd12-d8de-438d-a48e-850917c2867c
+		summarizeBy: sum
+		sourceColumn: US$ FOB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'US$ FLETE'
+		dataType: double
+		lineageTag: f888b458-16e6-4987-86e9-0f5a46c7f638
+		summarizeBy: sum
+		sourceColumn: US$ FLETE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'US$ SEGURO'
+		dataType: double
+		lineageTag: e852038f-6f55-4aea-9bb3-915b4defe309
+		summarizeBy: sum
+		sourceColumn: US$ SEGURO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'US$ CIF'
+		dataType: double
+		lineageTag: ec1a1193-035a-4c7e-be98-5da078b02a15
+		summarizeBy: sum
+		sourceColumn: US$ CIF
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column IGV
+		dataType: double
+		lineageTag: 7ec40e92-de2a-4d90-a89b-28f579508ea0
+		summarizeBy: sum
+		sourceColumn: IGV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column IPM
+		dataType: double
+		lineageTag: 52fa7556-01f4-41e8-836d-900e7b4db8b5
+		summarizeBy: sum
+		sourceColumn: IPM
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'PESO NETO'
+		dataType: double
+		lineageTag: d6517a01-2c28-4811-802e-24526e9667d8
+		summarizeBy: sum
+		sourceColumn: PESO NETO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'PESO BRUTO'
+		dataType: double
+		lineageTag: e5dd6f21-2c7c-4c3f-877c-fb4fd5135f4c
+		summarizeBy: sum
+		sourceColumn: PESO BRUTO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CANTIDAD
+		dataType: int64
+		formatString: 0
+		lineageTag: eef23d14-f543-44a8-b79d-cc7a2ad617f0
+		summarizeBy: sum
+		sourceColumn: CANTIDAD
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'UNIDAD DE MEDIDA'
+		dataType: string
+		lineageTag: 90cb46d6-8c83-4d95-88cb-75c3f507aa75
+		summarizeBy: none
+		sourceColumn: UNIDAD DE MEDIDA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'US$ CIF UNIT'
+		dataType: double
+		lineageTag: f20fb8e4-db5a-4115-a06d-a34293638a4e
+		summarizeBy: sum
+		sourceColumn: US$ CIF UNIT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CANTIDAD COMERCIAL'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5bc3727f-6fcc-4234-9ce6-dbcfca3d63da
+		summarizeBy: sum
+		sourceColumn: CANTIDAD COMERCIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'UNIDAD COMERCIAL'
+		dataType: string
+		lineageTag: 60d2d594-5ab2-433a-96d0-1258a3de0c9f
+		summarizeBy: none
+		sourceColumn: UNIDAD COMERCIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'TIPO DE BULTO'
+		dataType: string
+		lineageTag: 162f3f83-b081-4579-90b9-f7c5110b485a
+		summarizeBy: none
+		sourceColumn: TIPO DE BULTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CANTIDAD BULTO'
+		dataType: int64
+		formatString: 0
+		lineageTag: c44aece4-923d-4224-a14e-e1a662366d18
+		summarizeBy: sum
+		sourceColumn: CANTIDAD BULTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ESTADO DE MERCANCIA'
+		dataType: string
+		lineageTag: 4605475d-a813-4a13-a0a9-193bdd2fffd1
+		summarizeBy: none
+		sourceColumn: ESTADO DE MERCANCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PROBABLE EMBARCADOR'
+		dataType: string
+		lineageTag: cc144b1d-1917-4b46-aec9-c62d9c3764dd
+		summarizeBy: none
+		sourceColumn: PROBABLE EMBARCADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AGENTE DE ADUANA'
+		dataType: string
+		lineageTag: c18b598c-b9d1-4153-b835-c3e621536795
+		summarizeBy: none
+		sourceColumn: AGENTE DE ADUANA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'EMPRESA DE TRANSPORTE'
+		dataType: string
+		lineageTag: 75e49a44-583f-4771-9109-086ae97eb995
+		summarizeBy: none
+		sourceColumn: EMPRESA DE TRANSPORTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ALMACEN
+		dataType: string
+		lineageTag: b6ae2b60-8006-4019-af69-7e2179fb2df5
+		summarizeBy: none
+		sourceColumn: ALMACEN
+
+		annotation SummarizationSetBy = Automatic
+
+	column INCOTERM
+		dataType: string
+		lineageTag: eef6e79e-26ea-401f-bd65-ef11116a9218
+		summarizeBy: none
+		sourceColumn: INCOTERM
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MANIFIESTO DE CARGA'
+		dataType: string
+		lineageTag: c89ac6cb-304c-4bb5-afd3-6f7504c90ae7
+		summarizeBy: none
+		sourceColumn: MANIFIESTO DE CARGA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FECHA DE LLEGADA'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1e615f59-f3a9-4bf7-845b-fd762e24dba1
+		summarizeBy: none
+		sourceColumn: FECHA DE LLEGADA
+
+		variation Variation
+			isDefault
+			relationship: 7d8ff3c0-8a23-4ba9-a316-cca9919fb044
+			defaultHierarchy: LocalDateTable_eee93a97-a7fa-4d0a-96ef-3790528bf0af.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'US$ FOB UNIT'
+		dataType: double
+		lineageTag: 1a6ecb82-bbcd-4d38-bc3c-ca7837d1b341
+		summarizeBy: sum
+		sourceColumn: US$ FOB UNIT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'FECHA DE EMBARQUE'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 573126c8-72f9-4c14-8520-d5d7bb6a980d
+		summarizeBy: none
+		sourceColumn: FECHA DE EMBARQUE
+
+		variation Variation
+			isDefault
+			relationship: 2a73661e-d277-41e3-95bb-261decb03a8b
+			defaultHierarchy: LocalDateTable_aec7cfa5-1877-4164-a108-42692ee68024.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column BUQUE
+		dataType: string
+		lineageTag: a35a373b-dfcf-4235-8158-a4742719ab56
+		summarizeBy: none
+		sourceColumn: BUQUE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AGENTE DE CARGA EN DESTINO'
+		dataType: string
+		lineageTag: 9e824695-63ae-4f3e-8dbe-0651eec2d431
+		summarizeBy: none
+		sourceColumn: AGENTE DE CARGA EN DESTINO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'FORMA DE PAGO'
+		dataType: string
+		lineageTag: 8f656e8f-2fdc-4d38-87f1-9862d3b3fa38
+		summarizeBy: none
+		sourceColumn: FORMA DE PAGO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CANAL
+		dataType: string
+		lineageTag: 0012542e-d11f-4fde-a7e2-7c045f6cbbb1
+		summarizeBy: none
+		sourceColumn: CANAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column Fecha
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 90f2f13c-a9fe-48e4-9821-12df5d969ad2
+		summarizeBy: none
+		sourceColumn: Fecha
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DIAS_TRANSITO
+		dataType: int64
+		formatString: 0
+		lineageTag: 3a1d59e4-2b42-4583-8414-6cab4347b8c2
+		summarizeBy: sum
+		sourceColumn: DIAS_TRANSITO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Importaciones_RAM = m
+		mode: import
+		source =
+				let
+				    // CAMBIA ESTA RUTA por la ruta del Excel original en tu computadora.
+				    RutaArchivo = "C:\Users\yusuk\Downloads\MemoriasRAM.xlsx",
+				    Origen = Excel.Workbook(File.Contents(RutaArchivo), null, true),
+				    HojaDatasur = Origen{[Item="Datasur",Kind="Sheet"]}[Data],
+				    Encabezados = Table.PromoteHeaders(HojaDatasur, [PromoteAllScalars=true]),
+				
+				    // Eliminar solo las columnas que ya habías descartado.
+				    ColumnasEliminadas = Table.RemoveColumns(Encabezados,
+				        {"DIRECCIÓN", "TELÉFONO", "FAX", "AÑO FABRICACIÓN", "ADVALOREM", "BILL OF LADING MASTER", "BILL OF LADING"},
+				        MissingField.Ignore),
+				
+				    // Convertir primero las partes de la fecha. Los errores se convierten en null para revisión.
+				    PartesFecha = Table.TransformColumns(ColumnasEliminadas,
+				        {{"DÍA", each try Int64.From(_) otherwise null, Int64.Type},
+				         {"MES", each try Int64.From(_) otherwise null, Int64.Type},
+				         {"AÑO", each try Int64.From(_) otherwise null, Int64.Type}}),
+				    FechaAgregada = Table.AddColumn(PartesFecha, "Fecha",
+				        each try #date([AÑO],[MES],[DÍA]) otherwise null, type date),
+				    FechaUnificada = Table.RemoveColumns(FechaAgregada,{"DÍA","MES","AÑO"}),
+				
+				    // Tipos solo para columnas que realmente existan.
+				    ColumnasTexto = {"DUA","SERIE","ADUANA","TIPO DOCUMENTO","RUC IMPORTADOR", "IMPORTADOR",
+				        "DEPARTAMENTO DE IMPORTADOR", "PROVINCIA", "DISTRITO", "VÍA DE TRANSPORTE", "BANCO",
+				        "PAÍS DE ORIGEN", "PAÍS DE ADQUISICIÓN", "PUERTO DE EMBARQUE", "PARTIDA ARANCELARIA",
+				        "DESCRIPCIÓN ARANCELARIA", "MERCANCÍA", "DESCRIPCIÓN DE MERCANCÍA 1",
+				        "DESCRIPCIÓN DE MERCANCÍA 2", "DESCRIPCIÓN DE MERCANCÍA 3", "DESCRIPCIÓN DE MERCANCÍA 4",
+				        "PRODUCTO", "MARCA", "MODELO", "CARACTERÍSTICAS", "UNIDAD DE MEDIDA", "UNIDAD COMERCIAL",
+				        "TIPO DE BULTO", "ESTADO DE MERCANCIA", "PROBABLE EMBARCADOR", "AGENTE DE ADUANA",
+				        "EMPRESA DE TRANSPORTE", "ALMACEN", "INCOTERM", "MANIFIESTO DE CARGA", "BUQUE",
+				        "AGENTE DE CARGA EN DESTINO", "FORMA DE PAGO", "CANAL"},
+				    ColumnasDecimales = {"US$ FOB", "US$ FLETE", "US$ SEGURO", "US$ CIF", "IGV", "IPM",
+				        "PESO NETO", "PESO BRUTO", "US$ CIF UNIT", "US$ FOB UNIT"},
+				    ColumnasEnteras = {"CANTIDAD", "CANTIDAD COMERCIAL", "CANTIDAD BULTO"},
+				    TextoTipado = Table.TransformColumns(FechaUnificada,
+				        List.Transform(List.Intersect({ColumnasTexto,Table.ColumnNames(FechaUnificada)}),
+				            (n) => {n, (v) => if v = null then null else Text.From(v), type text})),
+				    NumerosTipados = Table.TransformColumns(TextoTipado,
+				        List.Transform(List.Intersect({ColumnasDecimales,Table.ColumnNames(TextoTipado)}),
+				            (n) => {n,(v) => try Number.From(v,"en-US") otherwise null, type number})),
+				    CantidadesTipadas = Table.TransformColumns(NumerosTipados,
+				        List.Transform(List.Intersect({ColumnasEnteras,Table.ColumnNames(NumerosTipados)}),
+				            (n) => {n,(v) => try Int64.From(v) otherwise null, Int64.Type})),
+				
+				    // Recortar, limpiar y convertir texto vacío a null.
+				    TextosLimpios = Table.TransformColumns(CantidadesTipadas,
+				        List.Transform(List.Intersect({ColumnasTexto,Table.ColumnNames(CantidadesTipadas)}),
+				            (n) => {n,(v) => if v = null then null else
+				                let t=Text.Trim(Text.Clean(v)) in if t = "" then null else t, type text})),
+				
+				    // Unificar nombres de marca sin reemplazos parciales dentro de otras palabras.
+				    MarcaEstandar = Table.TransformColumns(TextosLimpios,
+				        {{"MARCA", (v) => if v = null then "NO ESPECIFICADA" else
+				            let m=Text.Upper(v) in
+				                if m = "KINSGTON" or m = "KINGSTON" then "KINGSTON"
+				                else if m = "S/M" or m = "S-M" or m = "N/A" then "NO ESPECIFICADA"
+				                else m, type text}}),
+				    ModeloEstandar = Table.TransformColumns(MarcaEstandar,
+				        {{"MODELO", (v) => if v = null then "NO ESPECIFICADO"
+				            else if List.Contains({"S/M","S-M","N/A"},Text.Upper(v)) then "NO ESPECIFICADO"
+				            else v, type text}}),
+				
+				    // Productos sin descripción quedan nulos; no se inventan productos ni se quitan filas.
+				    // Conservamos todas las operaciones: no se eliminan registros solo por valores vacíos.
+				    Resultado = ModeloEstandar,
+				    #"Valor reemplazado" = Table.ReplaceValue(Resultado,"COREA {SUR}","COREA DEL SUR",Replacer.ReplaceText,{"PAÍS DE ORIGEN"}),
+				    #"Valor reemplazado1" = Table.ReplaceValue(#"Valor reemplazado","TAIWAN {FORMOSA}","TAIWAN",Replacer.ReplaceText,{"PAÍS DE ORIGEN"}),
+				    #"Valor reemplazado2" = Table.ReplaceValue(#"Valor reemplazado1","HONG KONG {CHINA}","HONG KONG",Replacer.ReplaceText,{"PAÍS DE ADQUISICIÓN"}),
+				    #"Valor reemplazado3" = Table.ReplaceValue(#"Valor reemplazado2","COREA {SUR}","COREA DEL SUR",Replacer.ReplaceText,{"PAÍS DE ADQUISICIÓN"}),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Valor reemplazado3",{{"FECHA DE EMBARQUE", type date}, {"FECHA DE LLEGADA", type date}}),
+				    #"Personalizada agregada" = Table.AddColumn(#"Tipo cambiado", "DIAS_TRANSITO", each if [FECHA DE EMBARQUE] = null or [FECHA DE LLEGADA] = null
+				then null
+				else Duration.Days(
+				    [FECHA DE LLEGADA] - [FECHA DE EMBARQUE]
+				)),
+				    #"Tipo cambiado1" = Table.TransformColumnTypes(#"Personalizada agregada",{{"DIAS_TRANSITO", Int64.Type}}),
+				    #"Errores reemplazados" = Table.ReplaceErrorValues(#"Tipo cambiado1", {{"FECHA DE LLEGADA", null}}),
+				    #"Errores reemplazados1" = Table.ReplaceErrorValues(#"Errores reemplazados", {{"DIAS_TRANSITO", null}})
+				in
+				    #"Errores reemplazados1"
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navegación
+
+	annotation PBI_ResultType = Table
+

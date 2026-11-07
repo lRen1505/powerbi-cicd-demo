@@ -1,0 +1,23 @@
+table DimMarca
+	lineageTag: 1a098f2e-c8e0-46d4-b86d-e810262d05d9
+
+	column MARCA
+		lineageTag: b0465cda-ad4e-4863-8ee6-3dcd6ed1a6a4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [MARCA]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimMarca = calculated
+		mode: import
+		source =
+				DISTINCT(
+				    SELECTCOLUMNS(
+				        Importaciones_RAM,
+				        "MARCA", Importaciones_RAM[MARCA]
+				    )
+				)
+
+	annotation PBI_Id = c16f3e9bd35c4dca83677c54cd4846d3
+

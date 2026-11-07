@@ -1,0 +1,43 @@
+relationship 7d8ff3c0-8a23-4ba9-a316-cca9919fb044
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Importaciones_RAM.'FECHA DE LLEGADA'
+	toColumn: LocalDateTable_eee93a97-a7fa-4d0a-96ef-3790528bf0af.Date
+
+relationship 2a73661e-d277-41e3-95bb-261decb03a8b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Importaciones_RAM.'FECHA DE EMBARQUE'
+	toColumn: LocalDateTable_aec7cfa5-1877-4164-a108-42692ee68024.Date
+
+relationship 6d2457d6-dae2-45a1-8dc9-4944207b69c3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DimFecha.Date
+	toColumn: LocalDateTable_c7281690-68a4-441c-b70e-56e9efff839e.Date
+
+relationship d2414802-97ca-5ca1-6c5c-abffdf10148a
+	fromColumn: Importaciones_RAM.Fecha
+	toColumn: DimFecha.Date
+
+relationship d479e3cd-e86a-be6e-d104-007dc69e70a6
+	fromColumn: Importaciones_RAM.MARCA
+	toColumn: DimMarca.MARCA
+
+relationship 291b3518-6d5c-9768-7427-bcba729b4e3f
+	fromColumn: Importaciones_RAM.'PAÍS DE ORIGEN'
+	toColumn: DimPais.'PAÍS DE ORIGEN'
+
+relationship 41542180-dab8-c7f8-aff0-f4271eb57b2b
+	fromColumn: Importaciones_RAM.'VÍA DE TRANSPORTE'
+	toColumn: DimTransporte.'VÍA DE TRANSPORTE'
+
+relationship e9fa023c-2acf-96ed-f594-11ee0475a090
+	fromColumn: Importaciones_RAM.PRODUCTO
+	toColumn: DimProducto.PRODUCTO
+
+relationship 01b0889a-6cce-4d81-87c8-b4f993b52a6e
+	fromColumn: Importaciones_RAM.ADUANA
+	toColumn: DimAduana.ADUANA
+
+relationship 5d7db1bb-d63c-19d1-cc2d-48e01fd60843
+	fromColumn: Importaciones_RAM.'RUC IMPORTADOR'
+	toColumn: DimImportador.'RUC IMPORTADOR'
+

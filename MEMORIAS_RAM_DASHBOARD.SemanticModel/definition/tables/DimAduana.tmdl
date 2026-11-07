@@ -1,0 +1,25 @@
+table DimAduana
+	lineageTag: b1ec8fff-039f-4fcf-b135-5bc43cc22035
+
+	column ADUANA
+		lineageTag: 715a45d7-60e4-4f5c-a26a-6174c4fb3009
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [ADUANA]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimAduana = calculated
+		mode: import
+		source =
+				
+				DISTINCT(
+				    SELECTCOLUMNS(
+				        Importaciones_RAM,
+				        "ADUANA",
+				        Importaciones_RAM[ADUANA]
+				    )
+				)
+
+	annotation PBI_Id = 365cc00b1a1e495e9d2997b5fca96776
+

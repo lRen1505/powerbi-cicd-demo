@@ -1,0 +1,28 @@
+table DimProducto
+	lineageTag: 72b7a2bb-8c90-4b38-91bb-a33ce0b48d0e
+
+	column PRODUCTO
+		lineageTag: c47e7969-313b-4ce9-831a-945c5d15242b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [PRODUCTO]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimProducto = calculated
+		mode: import
+		source =
+				
+				DISTINCT(
+				    SELECTCOLUMNS(
+				        Importaciones_RAM,
+				        "PRODUCTO",
+				        COALESCE(
+				            Importaciones_RAM[PRODUCTO],
+				            "NO ESPECIFICADO"
+				        )
+				    )
+				)
+
+	annotation PBI_Id = daf80426ad0240eeaf3e54cded520033
+

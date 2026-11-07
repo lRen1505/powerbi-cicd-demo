@@ -1,0 +1,31 @@
+table DimImportador
+	lineageTag: 4047e23c-8863-4c61-ad4b-0eef6339241b
+
+	column 'RUC IMPORTADOR'
+		lineageTag: 9f8ae3f3-e24e-40c7-b9cc-d6e24c4f1bf6
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Importaciones_RAM[RUC IMPORTADOR]
+
+		annotation SummarizationSetBy = Automatic
+
+	column IMPORTADOR
+		lineageTag: d9f61992-d1de-422c-8488-c37ef53d641d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Importaciones_RAM[IMPORTADOR]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimImportador = calculated
+		mode: import
+		source =
+				
+				SUMMARIZE(
+				    Importaciones_RAM,
+				    Importaciones_RAM[RUC IMPORTADOR],
+				    Importaciones_RAM[IMPORTADOR]
+				)
+
+	annotation PBI_Id = c3de0a6a46984d988e9304cdf79da49a
+

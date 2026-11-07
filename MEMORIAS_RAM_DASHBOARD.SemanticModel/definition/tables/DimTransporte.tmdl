@@ -1,0 +1,24 @@
+table DimTransporte
+	lineageTag: f33126f8-f9f5-4442-a6f3-d88e35605bd4
+
+	column 'VÍA DE TRANSPORTE'
+		lineageTag: e1bdde17-7c3e-45c1-83ea-a06c34ec52c1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [VÍA DE TRANSPORTE]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimTransporte = calculated
+		mode: import
+		source =
+				DISTINCT(
+				    SELECTCOLUMNS(
+				        Importaciones_RAM,
+				        "VÍA DE TRANSPORTE",
+				        Importaciones_RAM[VÍA DE TRANSPORTE]
+				    )
+				)
+
+	annotation PBI_Id = 4941ef187ba7430a86a0e3d2e7583b67
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "MEMORIAS_RAM_DASHBOARD"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3779baab-2164-4ed4-8e49-d1e6c23c30a5"
+  }
+}

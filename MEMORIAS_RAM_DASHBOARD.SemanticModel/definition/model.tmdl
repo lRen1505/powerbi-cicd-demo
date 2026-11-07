@@ -1,0 +1,30 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-PE
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Importaciones_RAM"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Importaciones_RAM
+ref table DateTableTemplate_21ee7149-c4e5-4b18-8cc3-b36a36b86f6d
+ref table LocalDateTable_eee93a97-a7fa-4d0a-96ef-3790528bf0af
+ref table LocalDateTable_aec7cfa5-1877-4164-a108-42692ee68024
+ref table DimFecha
+ref table LocalDateTable_c7281690-68a4-441c-b70e-56e9efff839e
+ref table DimMarca
+ref table DimImportador
+ref table DimPais
+ref table DimTransporte
+ref table DimProducto
+ref table DimAduana
+
+ref cultureInfo es-ES
+

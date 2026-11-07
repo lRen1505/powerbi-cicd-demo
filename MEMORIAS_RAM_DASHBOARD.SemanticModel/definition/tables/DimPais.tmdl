@@ -1,0 +1,24 @@
+table DimPais
+	lineageTag: 74c7a5a0-961f-4999-99d5-ceb9f54ae46f
+
+	column 'PAÍS DE ORIGEN'
+		lineageTag: f86f17d6-7817-4bd5-afc8-73046f03f4ab
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [PAÍS DE ORIGEN]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimPais = calculated
+		mode: import
+		source =
+				
+				DISTINCT(
+				    SELECTCOLUMNS(
+				        Importaciones_RAM,
+				        "PAÍS DE ORIGEN", Importaciones_RAM[PAÍS DE ORIGEN]
+				    )
+				)
+
+	annotation PBI_Id = e9a564a254ed401fbf0bfabb63352e45
+
