@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "cd48b5a1e03b57672815",
   "position": {
-    "x": 29.179331306990882,
-    "y": 43.768996960486319,
+    "x": 64.194528875379945,
+    "y": 75.866261398176292,
     "z": 0,
     "height": 728.02431610942244,
     "width": 745.531914893617,
@@ -79,6 +79,21 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Distribucion de productos por aduana'"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   },
