@@ -1,0 +1,50 @@
+
+name: Validacion CI Power BI PBIP
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [develop]
+  workflow_dispatch:
+
+jobs:
+  validar-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Validar archivos JSON de PBIP
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          archivos = [
+              p for p in Path('.').rglob('*.json')
+              if '.pbi' not in p.parts
+              and '.git' not in p.parts
+          ]
+
+          if not archivos:
+              raise SystemExit(
+                  'ERROR: No se encontraron archivos JSON'
+              )
+
+          for archivo in archivos:
+              try:
+                  with archivo.open(encoding='utf-8-sig') as f:
+                      json.load(f)
+                  print(f'OK: {archivo}')
+              except (ValueError, OSError) as error:
+                  raise SystemExit(
+                      f'ERROR en {archivo}: {error}'
+                  )
+
+          print(
+              f'CI exitoso: {len(archivos)} archivos JSON validos'
+          )
+          PY
+  
