@@ -1,4 +1,3 @@
-Titulo del dashboard: Reporte de Importaciones
+Titulo del dashboard: Reporte Gerencial de Importaciones
 Ambiente: Desarrollo
 Version: 1.0
-  
